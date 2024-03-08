@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <title>One 1721</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>ONE 1721</nav>
+        <div class="title-proposito">
+            <img src="" alt="">
+            <h1>UNIR A IGREJA DENTRO DA UNIVERSIDADE, INDEPENDENTE DE PLACA DE MOVIMENTO, 
+                BUSCANDO SER A REALIDADE DA ORAÇÃO DE CRISTO (JOÃO 17:21)
+                APRESENTANDO-O AO MUNDO ATRAVÉS DA UNIDADE.</h1>
+        </div>
+        
+        <button>VAMOS NESSA?</button>
+    </header>
+    <main>
+        <h1 id="section-quemsomos" class="title-quemsomos">Quem somos?</h1>
+        <div class="container">
+            <img src="https://dunamismovement.com/wp-content/webp-express/webp-images/uploads/2022/05/foto-2-e1652131149325-768x777.jpg.webp" alt="">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Earum voluptatum at, praesentium rem cum voluptates, dicta, magnam eius dignissimos quidem temporibus culpa architecto 
+                doloremque totam ducimus eligendi modi rerum quia.</h2>
+        </div>
+
+        <h1 id="section-cremos" class="title-quemsomos">Em quem cremos?</h1>
+        <div class="container">
+            <h2 class="cremos">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Earum voluptatum at, praesentium rem cum voluptates, dicta, magnam eius dignissimos quidem temporibus culpa architecto 
+                doloremque totam ducimus eligendi modi rerum quia.</h2>
+            <img id="crer" src="https://i.pinimg.com/564x/b8/f7/9f/b8f79f80fffb945156c57e12841eb98f.jpg" alt="">
+        </div>
+
+        <h1 id="section-vempraufu" class="title-quemsomos">Vem Pra Ufu</h1>
+        <div class="container">
+            <h2 class="cremos">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Earum voluptatum at, praesentium rem cum voluptates, dicta, magnam eius dignissimos quidem temporibus culpa architecto 
+                doloremque totam ducimus eligendi modi rerum quia.</h2>
+            <img id="crer" src="https://i.pinimg.com/736x/fd/0a/76/fd0a762b0305d55714eeaf1f86a68635.jpg" alt="">
+        </div>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function scrollToNextSection(sectionId) {
+                var nextSection = document.getElementById(sectionId);
+                nextSection.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            var button = document.querySelector('button');
+            button.addEventListener('click', function () {
+                scrollToNextSection('section-quemsomos');
+                document.getElementById('section-quemsomos').classList.add('animate');
+            });
+        });
+    </script>
+</body>
+</html>

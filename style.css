@@ -1,0 +1,101 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+body{
+    font-family: Helvetica, Arial,sans-serif;
+    color: aliceblue;
+    background-color: #130f40;
+    background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+}
+header {
+    height: 450px;
+    align-items: center; /* centraliza na vertical */
+    background-color: rgba(0, 0, 0, 0.5); /* 50% de transparência */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+    cursor: pointer;
+    background-color: rgba(61, 56, 56, 0.4); /* cor de fundo com opacidade */
+    border-radius: 10px;
+    padding: 10px;
+    width: 20%; /* ajustado para ocupar toda a largura do pai */
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+.title-proposito{
+
+    width: 60%;
+    margin: auto;
+    padding: 2rem;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+button{
+    margin: auto;
+    display: block;
+    padding: 20px;
+    background-color: transparent ;
+    color: white;
+    outline: none;
+    border: 2px solid white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+
+button:hover {
+    background-color: #ffff;
+    color: #000000;
+  
+}
+
+.title-quemsomos{
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+.container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+  
+.container img {
+    width: 350px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 90px; /* Margem à direita para separar da parágrafo */
+
+}
+  
+.container p {
+    flex: 1; /* Ocupa todo o espaço restante */
+}
+.cremos{
+    padding: 30px;
+}
+/* Adiciona a animação à classe animate */
+.title-proposito {
+    animation: fadeInUp 1s ease;
+}
+
+/* Define a animação de fadeInUp */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
